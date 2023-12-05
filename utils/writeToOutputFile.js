@@ -2,6 +2,7 @@ const fs = require("fs");
 const chalk = require("chalk");
 const path = require("path");
 
+// write data to output.json file
 function writeToOutputFile(fileName, data) {
   const currentDir = __dirname;
 

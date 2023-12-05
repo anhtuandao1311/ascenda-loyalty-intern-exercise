@@ -7,11 +7,13 @@ const offers = getValidatedOffers();
 
 function handleInput(rl, mainLogic) {
   return (input) => {
+    // check if check-in date is valid
     if (!isValidDate(input)) {
       console.log(chalk.red("Invalid date. Please try again.\n"));
       return mainLogic();
     } else {
       try {
+        // process offers
         processOffers(input, offers);
       } catch (err) {
         console.log(

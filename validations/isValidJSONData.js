@@ -1,6 +1,7 @@
 const Ajv = require("ajv");
 const ajv = new Ajv();
 
+// schema for input.json
 const schema = {
   type: "object",
   properties: {
