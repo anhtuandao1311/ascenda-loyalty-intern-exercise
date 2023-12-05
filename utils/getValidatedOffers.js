@@ -18,7 +18,7 @@ function getValidatedOffers(offers) {
     // this error is related to not being able to read the file, maybe missing file or incorrect JSON format
     console.error(
       chalk.red(
-        "Something is wrong with input.json or the file does not exist. Please re-check and run 'npm start' again.\n"
+        "Something is wrong with input.json or the file does not exist. Please re-check and run 'yarn start' again.\n"
       )
     );
     // console.error(err);

@@ -18,7 +18,7 @@ function handleInput(rl, mainLogic) {
       } catch (err) {
         console.log(
           chalk.red(
-            "Something is wrong. Please re-check the files and run 'npm start' again.\n"
+            "Something is wrong. Please re-check the files and run 'yarn start' again.\n"
           )
         );
         // console.error(err);
