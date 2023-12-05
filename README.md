@@ -34,7 +34,7 @@ For running the application, please follow these steps:
   ```
   yarn start
   ```
-- To run the tests, please run the program first, copy the correct output to `utils/predefinedOutput.json`, and run the following command, which will compare `output.json` and `utils/predefinedOutput.json`:
+- To run the tests, please run the program first, copy the correct output to `tests/predefinedOutput.json`, and run the following command, which will compare `output.json` and `tests/predefinedOutput.json`:
   ```
   yarn test
   ```
