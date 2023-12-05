@@ -1,20 +1,6 @@
 {
   "offers": [
     {
-      "id": 8,
-      "title": "Offer 7",
-      "description": "Offer 7 description",
-      "category": 4,
-      "merchants": [
-        {
-          "id": 8,
-          "name": "Offer4 Merchant1",
-          "distance": 0.2
-        }
-      ],
-      "valid_to": "2020-05-01"
-    },
-    {
       "id": 1,
       "title": "Offer 1",
       "description": "Offer 1 description",
@@ -27,6 +13,20 @@
         }
       ],
       "valid_to": "2020-02-01"
+    },
+    {
+      "id": 3,
+      "title": "Offer 3",
+      "description": "Offer 3 description",
+      "category": 2,
+      "merchants": [
+        {
+          "id": 3,
+          "name": "Offer3 Merchant1",
+          "distance": 0.8
+        }
+      ],
+      "valid_to": "2020-01-01"
     }
   ]
 }

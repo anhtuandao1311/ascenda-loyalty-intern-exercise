@@ -15,7 +15,7 @@ function getValidatedOffers(offers) {
   } catch (err) {
     console.error(
       chalk.red(
-        "Something is wrong with input.json. Please re-check the files and run 'npm start' again.\n"
+        "Something is wrong with input.json or the file does not exist. Please re-check and run 'npm start' again.\n"
       )
     );
     // console.error(err);

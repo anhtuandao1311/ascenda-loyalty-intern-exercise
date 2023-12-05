@@ -9,8 +9,8 @@ function processOffers(input, offers) {
   const minDistanceOffers = {};
 
   for (let offer of offers) {
-    let { category, valid_to, merchants } = offer;
-    if (!merchants.length) continue;
+    let { category, valid_to } = offer;
+    if (!offer.merchants.length) continue;
 
     const validTo = new Date(valid_to);
 
@@ -18,12 +18,13 @@ function processOffers(input, offers) {
       continue;
     }
 
-    const closestMerchant = getClosestMerchant(merchants);
+    const closestMerchant = getClosestMerchant(offer.merchants);
     offer.merchants = [closestMerchant];
 
     if (
       !minDistanceOffers[category] ||
-      minDistanceOffers[category].merchants[0].distance > merchants[0].distance
+      minDistanceOffers[category].merchants[0].distance >
+        offer.merchants[0].distance
     ) {
       minDistanceOffers[category] = offer;
     }
